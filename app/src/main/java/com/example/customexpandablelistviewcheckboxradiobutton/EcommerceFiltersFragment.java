@@ -94,28 +94,28 @@ public class EcommerceFiltersFragment extends Fragment {
 
 
 // Adding child data
-        List<String> byDate = new ArrayList<>();
-        byDate.add("Medium");
-        byDate.add("Small");
-        byDate.add("Large");
-        byDate.add("XSmall");
-        byDate.add("XLarge");
+        List<String> bySize = new ArrayList<>();
+        bySize.add("Medium");
+        bySize.add("Small");
+        bySize.add("Large");
+        bySize.add("XSmall");
+        bySize.add("XLarge");
 
 
-        List<String> category = new ArrayList<>();
-        category.add("Black");
-        category.add("Red");
-        category.add("White");
-        category.add("Green");
-        category.add("Blue");
+        List<String> color = new ArrayList<>();
+        color.add("Black");
+        color.add("Red");
+        color.add("White");
+        color.add("Green");
+        color.add("Blue");
 
         List<String> sort = new ArrayList<>();
         sort.add("Cost ($): highest first");
         sort.add("Cost ($): lowest first");
 
 
-        listDataChild.put(listDataHeader.get(0).getTitle(), byDate); // Header, Child data
-        listDataChild.put(listDataHeader.get(1).getTitle(), category);
+        listDataChild.put(listDataHeader.get(0).getTitle(), bySize); // Header, Child data
+        listDataChild.put(listDataHeader.get(1).getTitle(), color);
         listDataChild.put(listDataHeader.get(2).getTitle(), sort);
 
         listAdapter = new EcommerceFIltersExpandableAdapter(mContext, listDataHeader, listDataChild);
